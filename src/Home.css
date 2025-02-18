@@ -1,3 +1,8 @@
+body {
+    background-color: #D0E8E4; /* Soft teal background */
+    color: #4A7C7D; /* Text color */
+    font-family: Arial, sans-serif;
+}
 .logo {
     height: 50px; /* Adjust height of the logo */
     width: auto; /* Maintain aspect ratio */
@@ -7,15 +12,14 @@
 
 /* Navbar Styling */
 .navbar {
+    background-color: #2F5E5E; /* Dark teal navbar */
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #111;
-    border-bottom: 2px solid #fff;
 }
 /* Header Styling */
-.navbar header {
+.navbar h1 {
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -26,21 +30,20 @@
 
 /* Buttons Styling */
 .navbar button {
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
-    border: 2px solid #fff;
+    background-color: #4A7C7D; /* Blue-green button */
+    color: #FFFFFF; /* White text */
+    border: none;
     padding: 10px 15px;
-    margin: 5px;
+    margin:10px;
     font-size: 16px;
-    font-weight: bold;
     cursor: pointer;
     border-radius: 15px;
-    transition: all 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 /* Button Hover Effect */
 .navbar button:hover {
-    background-color: #000; /* Black background */
+    background-color: #2F5E5E; /* Darker shade on hover */
     color: #fff; /* White text */
     border-color: #fff;
 }

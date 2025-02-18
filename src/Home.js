@@ -6,15 +6,15 @@ import logo from './images/logo.png'
 const Home = () => {
     return(
         <nav  className="navbar">
-            <header>
+            <h1>
             <img src={logo} alt="Navan Mobile Logo" className="logo" />
-                service
-            </header>
+                TechCure
+            </h1>
             <div>
-                <button className="about">about</button>
-                <button className="services">services</button>
-                <button className="contact">contact</button>
-                <button className="products">products</button>
+                <button className="about">About</button>
+                <button className="services">Services</button>
+                <button className="contact">Contact</button>
+                <button className="products">Products</button>
             </div>
         </nav>
     );
