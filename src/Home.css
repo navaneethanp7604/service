@@ -13,7 +13,7 @@ body {
 /* Navbar Styling */
 .navbar {
     background-color: #2F5E5E; /* Dark teal navbar */
-    padding: 10px 10px;
+    padding: 5px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
