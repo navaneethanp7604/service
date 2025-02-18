@@ -1,0 +1,66 @@
+.logo {
+    height: 50px; /* Adjust height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and text */
+    border-radius:15px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #111;
+    border-bottom: 2px solid #fff;
+}
+/* Header Styling */
+.navbar header {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:White
+}
+
+/* Buttons Styling */
+.navbar button {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.navbar button:hover {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border-color: #fff;
+}
+
+/* Button Active Effect */
+.navbar button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar div {
+        margin-top: 10px;
+    }
+    .logo {
+        height: 40px;
+    }
+}
