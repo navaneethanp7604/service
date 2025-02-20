@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from "react";
 import "./Home.css";
 import logo from "./images/logo.png";
+import image from "../src/images/mobile image.png"
 
 const Home = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -37,9 +38,15 @@ const Home = () => {
         >
           <button onClick={() => setShowPopup(false)} className="close-btn">x</button>
           <h2>Welcome to TechCure</h2>
+          <h3>"We Repair, You Relax!"</h3>
           <button className="login-btn" onClick={() => window.location.href = "/login"}>Login</button>
         </div>
       )}
+      <div className="services-section">
+        <img src={image} alt="Mobile Repair" className="mobile-image" />
+        <h3>Fast & Reliable Mobile Repairs</h3>
+      </div>
+
 
       <footer>
         <div className="footer-links">
