@@ -1,17 +1,24 @@
 import React, { useState, useEffect} from "react";
 import "./Home.css";
 import logo from "./images/logo.png";
-import image from "../src/images/mobile image.png"
+import image from "../src/images/mobile service.jpeg"
 
 const Home = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [showImage, setShowImage] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
     }, 1000); // 1 seconds delay
+    const imageTimer = setTimeout(() => {
+      setShowImage(true);
+    }, 1200);
 
-    return () => clearTimeout(timer); // Cleanup timer on unmount
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(imageTimer);
+    };
   }, []);
 
   return (
@@ -43,8 +50,13 @@ const Home = () => {
         </div>
       )}
       <div className="services-section">
-        <img src={image} alt="Mobile Repair" className="mobile-image" />
         <h3>Fast & Reliable Mobile Repairs</h3>
+        <p className="services-description">
+    We specialize in quick and efficient mobile phone repairs, ensuring you get your device back in perfect condition.
+  </p>
+      </div>
+      <div className={`image-container ${showImage ? "image-slide-in" : ""}`}>
+        <img src={image} alt="Mobile Repair" className="mobile-image"/>
       </div>
 
 
