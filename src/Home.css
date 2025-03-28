@@ -110,12 +110,7 @@ body {
   }
 
 /* image */ 
-.services-section {
-  background-image: url('../src/images/mobile service.jpeg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 980.4px 400px; 
-  background-position: center;
+.services-section { 
   width:980.4px;
   height:400px;
   padding-top:100px;
